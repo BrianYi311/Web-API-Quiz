@@ -19,7 +19,7 @@
 
     <main>
         <section id="Instructions" class="display">
-            <h2>Coding Quiz</h2>
+            <h2>Football Quiz</h2>
                 <li>There will be 10 multiple choice questions</li>
                 <li>You will have 120 seconds to complete the quiz and then Game Over</li>
                 <li>Only 1 attempt per question, but no time penalty for wrong answers</li>
@@ -31,20 +31,20 @@
             <div id="Question-Title"></div>
                 <h3 id="question"></h3>
                 <div id="multiple-choice">
-                    <button class="choices"></button>
-                    <button class="choices"></button>
-                    <button class="choices"></button>
-                    <button class="choices"></button>
+                    <button class="choices" id="chA"></button>
+                    <button class="choices" id="chB"></button>
+                    <button class="choices" id="chC"></button>
+                    <button class="choices" id="chD"></button>
                 </div>
         </section>
 
         <section id="Game-Over" class="hide">
             <p id="result"></p>
             <input id="initials" placeholder="Enter Your Initials" maxlength="2">
-            <button class="submission">Submit</button>
+            <button id="submission">Submit</button>
         </section>
 
-        <section id="High Scores" class="hide">
+        <section id="HighScores" class="hide">
             <h3>High Scores</h3>
             <p id="all-scores"></p>
             <button id="back-to-homescreen">Home</button>

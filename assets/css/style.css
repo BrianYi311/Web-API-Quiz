@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background-color: peru;
+    background-color: green;
     color: black;
 }
 
@@ -21,12 +21,13 @@ header p {
 button {
     padding: 5px;
     border-radius: 9999px;
-    background-color: greenyellow;
+    background-color: black;
     border-color: whitesmoke;
+    color: white;
 }
 
 button:active {
-    background-color: red;
+    background-color: gray;
 }
 
 input {
