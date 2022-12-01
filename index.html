@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Javascript Quiz</title>
+
+<body>
+    <header>
+        <h1>Test your knowledge!</h1>
+        <nav>
+            <button onclick="showHighscores()">View Highscores</button>
+            <div class="timer-clock">Time:<span id="time">0</span></div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Instructions" class="display">
+            <h2>Javascript Coding Quiz</h2>
+                <li>There will be 10 multiple choice questions</li>
+                <li>You will have 120 seconds to complete the quiz and then Game Over</li>
+                <li>Only 1 attempt per question, but no time penalty for wrong answers</li>
+                <li>Good Luck!</li>
+            <button class="start-quiz">Begin Quiz</button>
+        </section>
+
+        <section id="MC-questions" class="hide">
+            <div id="Question-Title"></div>
+                <h3 id="question"></h3>
+                <div id="multiple-choice">
+                    <button class="choices"></button>
+                    <button class="choices"></button>
+                    <button class="choices"></button>
+                    <button class="choices"></button>
+                </div>
+        </section>
+
+        <section id="Game-Over" class="hide">
+            <p id="result"></p>
+            <input id="initials" placeholder="Enter Your Initials" maxlength="2">
+            <button class="submission">Submit</button>
+        </section>
+
+        <section id="High Scores" class="hide">
+            <h3>High Scores</h3>
+            <p id="all-scores"></p>
+            <button id="back-to-homescreen">Home</button>
+        </section>
+        
+        </main>
+
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
