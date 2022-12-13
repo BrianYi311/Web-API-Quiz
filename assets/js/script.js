@@ -42,7 +42,32 @@ var choiceA = document.getElementById("chA");
 var choiceB = document.getElementById("chB");
 var choiceC = document.getElementById("chC");
 var choiceD = document.getElementById("chD");
-var gameEnd = document.getElementById("Game-Over")
-var scoreEl = document.getElementById("result")
-var initialsEL= document.getElementById("initials")
-var submitScore= document.getElementById("submit")
+var gameEnd = document.getElementById("Game-Over");
+var scoreEl = document.getElementById("result");
+var initialsEL= document.getElementById("initials");
+var submitScore= document.getElementById("submit");
+
+var currentQuestion = 0;
+var currentTime = 120;
+var submittedInput =[];
+
+//Quiz timer function
+function setTimer(){
+    timerEl.setAttribute("class", "show")
+    var timerInterval = setInterval(function () {
+        secondsLeft--;
+        timerEl.textContent =secondsLeft;
+    if (secondsLeft===0 || currentQuestion > questions.length) {
+        clearInterval(timerInterval);
+        gameEnd();
+    }
+//milliseconds!
+},1000);    
+    introContainer.setAttribute("class", "hide");
+    MCContainer.setAttribute("class", "show section");
+    renderquestions(0);
+    currentQuestion++;
+}
+
+
+
